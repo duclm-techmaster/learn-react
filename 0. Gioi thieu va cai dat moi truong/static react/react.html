@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ReactJS</title>
+</head>
+<body>
+	<!-- Đây là nơi render của React -->
+	<div id="root">
+    <!-- Kết quả sẽ render ra -->
+    <!-- <h1 class="heading">Hello World</h1> -->
+  </div>
+
+
+
+
+	<!-- React CDN links -->
+	<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  
+	<script>
+		// Khai báo component App là 1 function
+		const App = () => {
+			return React.createElement('h1', {className: 'heading'}, 'Hello World')
+		}
+
+		// Render component App ra màn hình 
+		ReactDOM.render(React.createElement(App), document.getElementById('root'))
+	</script>
+</body>
+</html>

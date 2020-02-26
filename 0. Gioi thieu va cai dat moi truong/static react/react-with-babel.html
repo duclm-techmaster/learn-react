@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ReactJS with Babel</title>
+</head>
+<body>
+	<!-- Đây là nơi render của React -->
+  <div id="root">
+    <!-- Kết quả sẽ render ra -->
+    <!-- <h1 class="heading">Hello World</h1> -->
+  </div>
+
+
+
+
+	<!-- React CDN links -->
+	<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  
+  <!-- Babel CDN links -->
+	<!-- Cần Babel để viết được JSX -->
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+  <!-- Nếu dùng Babel cần <script type="text/babel"> -->
+	<script type="text/babel">
+		// Khai báo component App là 1 function
+		const App = () => {
+			return <h1 className="heading">Hello World</h1>
+		}
+
+		// Render component App ra màn hình 
+		ReactDOM.render(<App />, document.getElementById('root'))
+	</script>
+</body>
+</html>
