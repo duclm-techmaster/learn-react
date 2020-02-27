@@ -19,18 +19,16 @@
 	<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
   
   <!-- Babel CDN links -->
-	<!-- Cần Babel để viết được JSX -->
+	  <!-- Cần Babel để viết được JSX -->
 	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
   <!-- Nếu dùng Babel cần <script type="text/babel"> -->
 	<script type="text/babel">
-		// Khai báo component App là 1 function
-		const App = () => {
-			return <h1 className="heading">Hello World</h1>
-		}
+		// Khai báo React element
+		const element = <h1 className="heading">Hello World</h1>
 
-		// Render component App ra màn hình 
-		ReactDOM.render(<App />, document.getElementById('root'))
+		// Render React element trên ra cây DOM
+		ReactDOM.render(element, document.getElementById('root'))
 	</script>
 </body>
 </html>

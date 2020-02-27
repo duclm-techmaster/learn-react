@@ -19,13 +19,11 @@
 	<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
   
 	<script>
-		// Khai báo component App là 1 function
-		const App = () => {
-			return React.createElement('h1', {className: 'heading'}, 'Hello World')
-		}
+		// Khai báo React element
+		const element = React.createElement('h1', {className: 'heading'}, 'Hello World')
 
-		// Render component App ra màn hình 
-		ReactDOM.render(React.createElement(App), document.getElementById('root'))
+		// Render React element trên ra cây DOM
+		ReactDOM.render(element, document.getElementById('root'))
 	</script>
 </body>
 </html>
