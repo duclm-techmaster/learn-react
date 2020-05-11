@@ -15,7 +15,7 @@ class Row extends React.Component {
 }
 
 class App extends React.Component {
-  deleteRow(e, index) {
+  deleteRow = (e, index) => {
     e.target.closest(`[data-index="${index}"]`).remove()
   };
 

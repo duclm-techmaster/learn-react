@@ -1,8 +1,9 @@
 import React from 'react'
 
 class App extends React.Component {
-  toggle(e) {
-    let status = e.target.textContent;
+  toggle = e => {
+    let status = e.target.textContent
+
     switch (status) {
       case 'ON':
         e.target.textContent = 'OFF'
